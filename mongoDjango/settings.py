@@ -37,6 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rest_framework',
+    'nosql',
 ]
 
 MIDDLEWARE = [
@@ -75,8 +77,13 @@ WSGI_APPLICATION = 'mongoDjango.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'djongo',
+        'NAME':'mongoDjango',
+        'HOST': 'mongodb+srv://djongo:kckc123kc@mongodjango-ezrm9.mongodb.net/test?retryWrites=true&w=majority',
+        'USER':'djongo',
+        'PASSWORD':'kckc123kc',
+
+
     }
 }
 
