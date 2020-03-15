@@ -79,11 +79,6 @@ DATABASES = {
     'default': {
         'ENGINE': 'djongo',
         'NAME':'mongoDjango',
-        'HOST': 'mongodb+srv://djongo:kckc123kc@mongodjango-ezrm9.mongodb.net/test?retryWrites=true&w=majority',
-        'USER':'djongo',
-        'PASSWORD':'kckc123kc',
-
-
     }
 }
 
